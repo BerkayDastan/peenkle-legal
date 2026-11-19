@@ -1,0 +1,84 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{--bg:#fff8ec;--card:#fff;--ink:#3a2a5e;--accent:#ff7a1a;--muted:#6f6490}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(#fff3d6,#ffe0f0);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0;color:var(--accent)}
+h2{font-size:1.25rem;margin:1.6em 0 .4em}
+.card{background:var(--card);border-radius:20px;padding:22px 24px;box-shadow:0 6px 24px rgba(90,40,140,.12)}
+.lang button{border:2px solid var(--accent);background:#fff;color:var(--accent);border-radius:999px;padding:6px 16px;font-weight:700;cursor:pointer;margin-left:6px}
+.lang button.on{background:var(--accent);color:#fff}
+a{color:#6a3fd0}
+.muted{color:var(--muted);font-size:.92rem}
+ul{padding-left:1.2em}
+nav a{display:inline-block;margin-right:14px}
+@media(max-width:520px){h1{font-size:1.6rem}.card{padding:16px}}
+</style><script>window.PEENKLE={developer:"[GELİŞTİRİCİ ADI]",email:"[E-POSTA ADRESİN]",updated:"19.11.2026"};</script><script>(function(){
+  var C=window.PEENKLE||{};
+  function fill(){
+    document.querySelectorAll('[data-f]').forEach(function(e){e.textContent=C[e.getAttribute('data-f')]||''});
+    document.querySelectorAll('a[data-mail]').forEach(function(a){a.href='mailto:'+(C.email||'');a.textContent=C.email||''});
+  }
+  function set(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-l]').forEach(function(e){e.style.display=e.getAttribute('data-l')===l?'':'none'});
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.k===l)});
+    try{localStorage.setItem('peenkle_lang',l)}catch(e){}
+  }
+  var q=(location.search.match(/lang=(tr|en)/)||[])[1];
+  var s=null;try{s=localStorage.getItem('peenkle_lang')}catch(e){}
+  var l=q||s||((navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en');
+  document.addEventListener('DOMContentLoaded',function(){
+    fill();set(l);
+    document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){set(b.dataset.k)}});
+  });
+})();
+</script><title>Kullanım Koşulları – Peenkle Cat: Sneaky Escape</title></head><body><div class="wrap">
+<header><nav><a href="index.html">Peenkle Cat</a><a href="privacy.html">Gizlilik / Privacy</a></nav><div class="lang"><button data-k="tr">Türkçe</button><button data-k="en">English</button></div></header>
+<div class="card">
+
+<div data-l="tr">
+<h1>Kullanım Koşulları</h1>
+<p class="muted">Son güncelleme: <span data-f="updated"></span> · Yayıncı: <span data-f="developer"></span></p>
+<p>Peenkle Cat: Sneaky Escape'i ("Oyun") indirerek veya oynayarak bu koşulları kabul etmiş olursunuz. Kabul etmiyorsanız Oyunu kullanmayın.</p>
+<h2>1. Lisans</h2>
+<p>Size, Oyunu kişisel ve ticari olmayan amaçla cihazınızda kullanmanız için sınırlı, devredilemez bir lisans veriyoruz. Oyunu kopyalayamaz, değiştiremez, tersine mühendislik yapamaz veya yeniden dağıtamazsınız.</p>
+<h2>2. Fikri mülkiyet</h2>
+<p>Oyunun kodu, çizimleri, karakterleri, adı ve sesleri yayıncıya veya lisans verenlerine aittir ve telif hakkıyla korunur.</p>
+<h2>3. Reklamlar</h2>
+<p>Oyun reklam içerir. Reklamlar bölüm aralarında veya isteğe bağlı (ödüllü) olarak gösterilir. Reklam içeriği reklam verenlere aittir. Ayrıntılar için <a href="privacy.html?lang=tr">Gizlilik Politikası</a>'na bakın.</p>
+<h2>4. Çocuklar</h2>
+<p>Oyun her yaştan oyuncu için tasarlanmıştır. Küçük çocukların oynamasını ebeveynlerin gözetmesini öneririz.</p>
+<h2>5. Sorumluluğun sınırı</h2>
+<p>Oyun "olduğu gibi" sunulur. Yasaların izin verdiği ölçüde, kesintisiz veya hatasız çalışacağına dair garanti vermeyiz ve Oyunun kullanımından doğan dolaylı zararlardan sorumlu değiliz.</p>
+<h2>6. Değişiklikler ve sonlandırma</h2>
+<p>Oyunu ve bu koşulları değiştirebilir veya Oyunu sonlandırabiliriz. Güncel koşullar her zaman bu sayfada yayınlanır.</p>
+<h2>7. Uygulanacak hukuk</h2>
+<p>Bu koşullar Türkiye Cumhuriyeti hukukuna tabidir. Tüketici olarak yasal olarak sahip olduğunuz zorunlu haklar saklıdır.</p>
+<h2>8. İletişim</h2>
+<p><span data-f="developer"></span> · <a data-mail></a></p>
+</div>
+
+<div data-l="en" style="display:none">
+<h1>Terms of Use</h1>
+<p class="muted">Last updated: <span data-f="updated"></span> · Publisher: <span data-f="developer"></span></p>
+<p>By downloading or playing Peenkle Cat: Sneaky Escape (the "Game") you agree to these terms. If you do not agree, do not use the Game.</p>
+<h2>1. License</h2>
+<p>We grant you a limited, non-transferable license to use the Game on your device for personal, non-commercial purposes. You may not copy, modify, reverse engineer or redistribute the Game.</p>
+<h2>2. Intellectual property</h2>
+<p>The Game's code, artwork, characters, name and sounds belong to the publisher or its licensors and are protected by copyright.</p>
+<h2>3. Ads</h2>
+<p>The Game contains ads, shown between levels or optionally (rewarded). Ad content belongs to advertisers. See the <a href="privacy.html?lang=en">Privacy Policy</a> for details.</p>
+<h2>4. Children</h2>
+<p>The Game is designed for players of all ages. We recommend that parents supervise young children.</p>
+<h2>5. Limitation of liability</h2>
+<p>The Game is provided "as is". To the extent permitted by law, we do not guarantee uninterrupted or error-free operation and are not liable for indirect damages arising from use of the Game.</p>
+<h2>6. Changes and termination</h2>
+<p>We may change the Game and these terms, or discontinue the Game. Current terms are always published on this page.</p>
+<h2>7. Governing law</h2>
+<p>These terms are governed by the laws of the Republic of Türkiye. Mandatory consumer rights you have by law remain unaffected.</p>
+<h2>8. Contact</h2>
+<p><span data-f="developer"></span> · <a data-mail></a></p>
+</div>
+
+</div></div></body></html>

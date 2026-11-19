@@ -1,0 +1,116 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{--bg:#fff8ec;--card:#fff;--ink:#3a2a5e;--accent:#ff7a1a;--muted:#6f6490}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(#fff3d6,#ffe0f0);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0;color:var(--accent)}
+h2{font-size:1.25rem;margin:1.6em 0 .4em}
+.card{background:var(--card);border-radius:20px;padding:22px 24px;box-shadow:0 6px 24px rgba(90,40,140,.12)}
+.lang button{border:2px solid var(--accent);background:#fff;color:var(--accent);border-radius:999px;padding:6px 16px;font-weight:700;cursor:pointer;margin-left:6px}
+.lang button.on{background:var(--accent);color:#fff}
+a{color:#6a3fd0}
+.muted{color:var(--muted);font-size:.92rem}
+ul{padding-left:1.2em}
+nav a{display:inline-block;margin-right:14px}
+@media(max-width:520px){h1{font-size:1.6rem}.card{padding:16px}}
+</style><script>window.PEENKLE={developer:"[GELİŞTİRİCİ ADI]",email:"[E-POSTA ADRESİN]",updated:"19.11.2026"};</script><script>(function(){
+  var C=window.PEENKLE||{};
+  function fill(){
+    document.querySelectorAll('[data-f]').forEach(function(e){e.textContent=C[e.getAttribute('data-f')]||''});
+    document.querySelectorAll('a[data-mail]').forEach(function(a){a.href='mailto:'+(C.email||'');a.textContent=C.email||''});
+  }
+  function set(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-l]').forEach(function(e){e.style.display=e.getAttribute('data-l')===l?'':'none'});
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.k===l)});
+    try{localStorage.setItem('peenkle_lang',l)}catch(e){}
+  }
+  var q=(location.search.match(/lang=(tr|en)/)||[])[1];
+  var s=null;try{s=localStorage.getItem('peenkle_lang')}catch(e){}
+  var l=q||s||((navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en');
+  document.addEventListener('DOMContentLoaded',function(){
+    fill();set(l);
+    document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){set(b.dataset.k)}});
+  });
+})();
+</script><title>Gizlilik Politikası – Peenkle Cat: Sneaky Escape</title></head><body><div class="wrap">
+<header><nav><a href="index.html">Peenkle Cat</a><a href="terms.html">Kullanım Koşulları / Terms</a></nav><div class="lang"><button data-k="tr">Türkçe</button><button data-k="en">English</button></div></header>
+<div class="card">
+
+<div data-l="tr">
+<h1>Gizlilik Politikası</h1>
+<p class="muted">Son güncelleme: <span data-f="updated"></span> · Uygulama: Peenkle Cat: Sneaky Escape · Yayıncı: <span data-f="developer"></span></p>
+<p>Bu politika, <b>Peenkle Cat: Sneaky Escape</b> oyununu ("Oyun") oynarken hangi bilgilerin işlendiğini açıklar. Oyun her yaştan oyuncuya uygundur ve çocukların gizliliğini koruyacak şekilde tasarlanmıştır.</p>
+
+<h2>1. Bizim topladığımız bilgiler</h2>
+<ul>
+<li>Hesap, üyelik, ad, e-posta, telefon, konum, rehber, kamera veya mikrofon bilgisi <b>istemeyiz ve toplamayız</b>.</li>
+<li>Oyun ilerlemeniz (açılan bölümler, yıldızlar, ayarlar, dil) yalnızca <b>cihazınızda</b> saklanır. Sunucularımıza gönderilmez. Oyunu silerseniz bu veriler de silinir.</li>
+</ul>
+
+<h2>2. Reklamlar</h2>
+<p>Oyun, Google AdMob aracılığıyla reklam gösterir. Reklam hizmeti; reklamı göstermek, kötüye kullanımı önlemek ve ölçüm yapmak için cihaz tanımlayıcıları, IP adresi, cihaz ve uygulama bilgisi ve reklam etkileşimi gibi teknik verileri işleyebilir. Bu veriler Google tarafından kendi gizlilik politikasına göre işlenir: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+<p>Oyun her yaştan kullanıcıya hitap ettiği için reklamları <b>çocuklara yönelik işleme</b> modunda ve <b>genel izleyici (G)</b> içerik derecesiyle isteriz. Bu nedenle <b>kişiselleştirilmiş reklam gösterilmez</b> ve reklamlar için kullanıcının ilgi alanlarına dayalı profil oluşturulmaz.</p>
+<p>Reklamlar yalnızca bölüm aralarında veya sizin isteğinizle (ödüllü reklam, örneğin "Reklam izle, kaldığın yerden devam et") gösterilir. Oyun sırasında reklam çıkmaz.</p>
+
+<h2>3. Oyun altyapısı</h2>
+<p>Oyun Unity oyun motoruyla yapılmıştır. Unity, uygulamanın çalışması için gerekli teknik bilgileri (ör. cihaz modeli, işletim sistemi sürümü, hata kayıtları) işleyebilir. Bu bilgilerle bir kişiyi doğrudan tanımayız.</p>
+
+<h2>4. Çocukların gizliliği</h2>
+<p>Çocuklardan bilerek kişisel bilgi toplamayız. Bir ebeveyn veya vasi, çocuğunun bize bilgi verdiğini düşünüyorsa aşağıdaki adresten bize ulaşabilir; bu bilgiyi sileriz.</p>
+
+<h2>5. Üçüncü taraflarla paylaşım</h2>
+<p>Kişisel verileri satmayız veya reklam amaçlı paylaşmayız. Yalnızca yukarıda belirtilen reklam ve oyun altyapısı hizmet sağlayıcıları, hizmetlerini sunmak için gerekli teknik verileri işler.</p>
+
+<h2>6. Haklarınız</h2>
+<p>Yürürlükteki mevzuat (KVKK, GDPR vb.) kapsamında verilerinize erişme, düzeltme, silme ve itiraz hakkınız vardır. Biz doğrudan kişisel veri tutmadığımız için çoğu veri cihazınızda durur. Cihaz reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya kısıtlayabilirsiniz (iOS: Ayarlar > Gizlilik, Android: Ayarlar > Google > Reklamlar).</p>
+
+<h2>7. Güvenlik ve saklama</h2>
+<p>Oyun verileri cihazınızda saklanır. Reklam hizmeti verileri Google'ın kendi saklama sürelerine tabidir.</p>
+
+<h2>8. Değişiklikler</h2>
+<p>Bu politikayı güncelleyebiliriz. Güncel hali her zaman bu sayfada, yukarıdaki tarihle yayınlanır.</p>
+
+<h2>9. İletişim</h2>
+<p><span data-f="developer"></span> · <a data-mail></a></p>
+</div>
+
+<div data-l="en" style="display:none">
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: <span data-f="updated"></span> · App: Peenkle Cat: Sneaky Escape · Publisher: <span data-f="developer"></span></p>
+<p>This policy explains what information is processed when you play <b>Peenkle Cat: Sneaky Escape</b> (the "Game"). The Game is suitable for players of all ages and is designed to protect children's privacy.</p>
+
+<h2>1. Information we collect</h2>
+<ul>
+<li>We <b>do not ask for or collect</b> accounts, names, emails, phone numbers, location, contacts, camera or microphone data.</li>
+<li>Your game progress (unlocked levels, stars, settings, language) is stored <b>only on your device</b>. It is not sent to our servers. If you delete the Game, this data is deleted too.</li>
+</ul>
+
+<h2>2. Advertising</h2>
+<p>The Game shows ads through Google AdMob. The ad service may process technical data such as device identifiers, IP address, device and app information and ad interactions to serve ads, prevent abuse and measure performance. Google processes this data under its own privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+<p>Because the Game is for all ages, we request ads with <b>child-directed treatment</b> and a <b>General Audience (G)</b> content rating. As a result, <b>personalized ads are not shown</b> and no interest-based profile is built for ads.</p>
+<p>Ads appear only between levels or when you choose them (rewarded ads, e.g. "Watch an ad, continue from here"). No ads appear during gameplay.</p>
+
+<h2>3. Game engine</h2>
+<p>The Game is built with the Unity engine. Unity may process technical information needed to run the app (e.g. device model, OS version, crash logs). We cannot directly identify a person from it.</p>
+
+<h2>4. Children's privacy</h2>
+<p>We do not knowingly collect personal information from children. If a parent or guardian believes their child has given us information, contact us below and we will delete it.</p>
+
+<h2>5. Sharing with third parties</h2>
+<p>We do not sell personal data or share it for advertising. Only the ad and game-engine service providers named above process the technical data needed to provide their services.</p>
+
+<h2>6. Your rights</h2>
+<p>Under applicable laws (GDPR, KVKK, etc.) you may have rights to access, correct, delete or object to processing of your data. Since we do not hold personal data ourselves, most data stays on your device. You can reset or limit your device advertising ID in your device settings (iOS: Settings &gt; Privacy, Android: Settings &gt; Google &gt; Ads).</p>
+
+<h2>7. Security and retention</h2>
+<p>Game data stays on your device. Ad-service data is subject to Google's own retention periods.</p>
+
+<h2>8. Changes</h2>
+<p>We may update this policy. The current version is always published on this page with the date above.</p>
+
+<h2>9. Contact</h2>
+<p><span data-f="developer"></span> · <a data-mail></a></p>
+</div>
+
+</div></div></body></html>
